@@ -6,7 +6,7 @@ class Movies{
     public $anno;
     public $casaDiProduzione;
     public $lingua;
-    public $oscar;
+    private $oscar = 0;
 
     function __construct( $nome,$regista,$anno,$casaDiProduzione,$lingua){
         $this->nome =$nome;
@@ -16,7 +16,11 @@ class Movies{
         $this->lingua =$lingua;
     }
 
-    public function 
+    // public function setOscar($_oscar){
+    //     if($this->oscar > 0){
+
+    //     }
+    // }
 
 }
 

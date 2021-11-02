@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__."./Movie.php";
+require __DIR__."/Movie.php";
 echo "<h2>Lista film d'animazione</h2>";
 $castelloErrante = new Movies("Castello Errante di Howl","Hayao Miyazaki",2004,"Studio Ghibli","giapponese");
 
