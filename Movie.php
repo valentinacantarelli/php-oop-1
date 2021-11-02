@@ -6,7 +6,8 @@ class Movies{
     public $anno;
     public $casaDiProduzione;
     public $lingua;
-    private $oscar = 0;
+    public $rating =0;
+    
 
     function __construct( $nome,$regista,$anno,$casaDiProduzione,$lingua){
         $this->nome =$nome;
@@ -14,13 +15,16 @@ class Movies{
         $this->anno =$anno;
         $this->casaDiProduzione =$casaDiProduzione;
         $this->lingua =$lingua;
+        
     }
 
-    // public function setOscar($_oscar){
-    //     if($this->oscar > 0){
-
-    //     }
-    // }
-
+    public function setVoto($_voto){
+         $this->rating =$_voto/2;
+          
+        }
+     
+     public function getVoto(){
+        return $this ->rating;
+     }
 }
 
